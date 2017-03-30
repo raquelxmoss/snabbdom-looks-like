@@ -1,0 +1,33 @@
+{
+  "name": "snabbdom-looks-like",
+  "version": "0.1.0",
+  "description": "```js const expected = div('hello world'); const actual = div('hello world');",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'test/**/*.ts' --compilers ts:ts-node/register",
+    "test/auto": "mocha 'test/**/*.ts' --compilers ts:ts-node/register --watch -R min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raquelxmoss/snabbdom-looks-like.git"
+  },
+  "author": "Raquel Moss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raquelxmoss/snabbdom-looks-like/issues"
+  },
+  "homepage": "https://github.com/raquelxmoss/snabbdom-looks-like#readme",
+  "dependencies": {
+    "@types/core-js": "^0.9.40",
+    "mocha": "^3.2.0",
+    "snabbdom": "^0.6.7",
+    "tsify": "^3.0.1",
+    "typescript": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.40",
+    "browserify": "^14.1.0",
+    "chai": "^3.5.0",
+    "ts-node": "^3.0.2"
+  }
+}
